@@ -25,7 +25,7 @@ class TestApp(EWrapper, EClient):
 
 def main():
     app = TestApp()
-    app.connect("127.0.0.1", 7499, 0)
+    app.connect("127.0.0.1", XXXX, 0)    # xxxx is your port number
     contact = Contract()
     contact.symbol = "ACC"
     contact.secType = "STK"
