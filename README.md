@@ -6,3 +6,5 @@ download the historical data of stock market from interactive broker using IB py
 2-download the IB python API
 3-download the IB gateway
 
+# Last thursday of the month 
+
