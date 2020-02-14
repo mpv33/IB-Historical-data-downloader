@@ -71,7 +71,7 @@ def main(ib_app):
 
 if __name__ == "__main__":
     app = TestApp()
-    app.connect("127.0.0.1", 7489, 0)
+    app.connect("127.0.0.1", xxxx, 0)           # port number 
     t = Thread(target=app.run)
     t.start()
     main(app)
