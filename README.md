@@ -1,4 +1,4 @@
-# IB-Historical-data-downloader
+# IB-Historical-data-downloader API
 download the historical data of stock market from interactive broker using IB python API
 
 # pre-request :
