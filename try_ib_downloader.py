@@ -26,11 +26,11 @@ class TestApp(EWrapper, EClient):
         print(bar)
 
 def main(ib_app):
-    contact = Contract()
-    contact.symbol = "ACC"
-    contact.secType = "STK"
-    contact.exchange = "NSE"
-    contact.currency = "INR"
+    contract = Contract()
+    contract.symbol = "ACC"
+    contract.secType = "STK"
+    contract.exchange = "NSE"
+    contract.currency = "INR"
     #contact.lastTradeDateOrContractMonth="201912
 
     #ib_app.reqHistoricalData(1, contact, '20191230 15:30:00', "1 D", "1 min", "MIDPOINT", 0, 1, False, {})
@@ -63,7 +63,8 @@ def main(ib_app):
             #print(holiday_dt)
             stime = stime + timedelta(days=1)
         else:
-            ib_app.reqHistoricalData(1, contact, dt, "1 D", "1 min", "MIDPOINT", 0, 1, False, {})
+            ib_app.reqHistoricalData(1, contract, dt, "1 D", "1 min", "MIDPOINT", 0, 1, False, {})
+            #or app.reqHistoricalData(1, contract, dt, length, barSize, "TRADES", 1, 1, False, [])
             sleep(5)
             stime = stime + timedelta(days=1)
             
